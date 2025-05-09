@@ -30,7 +30,7 @@
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
     box-shadow: -1px 3px 5px rgb(122, 105, 122);
 }
