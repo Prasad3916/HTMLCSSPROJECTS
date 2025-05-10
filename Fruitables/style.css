@@ -1057,3 +1057,151 @@
 .subf22 ul li:hover,.subf23 ul li:hover,.subf23 ul li:hover{
     color: #FFB524;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logoitem {
+        width: 45%;
+        margin: 10px;
+    }
+    
+    .categories {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar ul {
+        display: none;
+    }
+    
+    .body {
+        flex-direction: column;
+        padding: 50px 7%;
+        height: auto;
+    }
+    .body .text, .body .image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .applebasket {
+        flex-direction: column;
+        text-align: center;
+    }
+    .applebasket .image {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .items {
+        flex-direction: column;
+        height: auto;
+    }
+    .items ul {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer2 {
+        flex-direction: column;
+    }
+    .footer2 div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .content ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logos .logoitem {
+        width: 100%;
+    }
+    
+    .products {
+        grid-template-columns: 1fr;
+    }
+    
+    .images {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial .image {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-container1 {
+        width: 100%;
+    }
+    
+    .footer1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .subf13 {
+        margin-top: 20px;
+    }
+    
+    .footer3 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .search-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .items ul li button {
+        margin: 5px;
+    }
+    
+    .applebasket .text .one,
+    .applebasket .text .two {
+        font-size: 40px;
+    }
+    
+    .footer .subf21 button {
+        width: 100%;
+    }
+}
