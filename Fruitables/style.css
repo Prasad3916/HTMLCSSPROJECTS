@@ -1183,8 +1183,7 @@
 
 
 
-/* Add these media queries at the end of your existing CSS */
-/* ========== General Responsive Rules ========== */
+/* 
 @media (max-width: 1200px) {
   .content,
   .logos,
@@ -1201,7 +1200,7 @@
 }
 
 @media (max-width: 992px) {
-  /* Header Section */
+ 
   .navbar {
     flex-direction: column;
     padding: 15px 5%;
@@ -1213,7 +1212,7 @@
     margin-top: 15px;
   }
 
-  /* Hero Section */
+
   .body {
     flex-direction: column;
     height: auto;
@@ -1226,7 +1225,7 @@
     margin: 20px 0;
   }
 
-  /* Products Grid */
+
   .products {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -1234,7 +1233,7 @@
 }
 
 @media (max-width: 768px) {
-  /* Categories Section */
+
   .categories {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1244,7 +1243,7 @@
     height: auto;
   }
 
-  /* Applebasket Section */
+  
   .applebasket {
     flex-direction: column;
     text-align: center;
@@ -1261,12 +1260,12 @@
     font-size: 2.5rem;
   }
 
-  /* Products Grid */
+
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Footer Section */
+
   .footer2 {
     flex-direction: column;
   }
@@ -1281,44 +1280,42 @@
 }
 
 @media (max-width: 576px) {
-  /* General Adjustments */
+ 
   html {
     font-size: 14px;
   }
 
-  /* Header */
+
   .navbar .main {
     font-size: 2rem;
   }
 
-  /* Hero Section */
+
   .body .text .foods {
     font-size: 2.5rem;
   }
 
-  /* Products Grid */
+
   .products {
     grid-template-columns: 1fr;
   }
 
-  /* Categories Section */
   .categories .prod .content1 div {
     width: 90%;
     padding: 15px;
   }
 
-  /* Applebasket Section */
   .applebasket .text .one,
   .applebasket .text .two {
     font-size: 2rem;
   }
 
-  /* Images Grid */
+
   .images {
     grid-template-columns: 1fr;
   }
 
-  /* Footer Section */
+
   .footer1 {
     flex-direction: column;
     text-align: center;
@@ -1335,22 +1332,19 @@
   }
 }
 
-/* ========== Specific Element Fixes ========== */
-/* Image Responsiveness */
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Form Elements */
 .search-input,
 .search-input1 {
   width: 100%;
   max-width: 400px;
 }
 
-/* Card Elements */
 .logoitem,
 .productitem,
 .prod {
@@ -1359,7 +1353,6 @@ img {
   margin: 10px auto;
 }
 
-/* Flex Containers */
 .navbar,
 .body,
 .applebasket,
@@ -1368,7 +1361,6 @@ img {
   flex-wrap: wrap;
 }
 
-/* Grid Items */
 .products > *,
 .categories > *,
 .images > * {
@@ -1376,13 +1368,12 @@ img {
   min-width: 0;
 }
 
-/* Text Scaling */
 h1, h2, h3, p {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-/* Mobile Menu */
+
 @media (max-width: 768px) {
   .navbar ul {
     display: none;
@@ -1393,10 +1384,9 @@ h1, h2, h3, p {
   }
 }
 
-/* Ensure Clickable Elements are Touch-Friendly */
 button,
 a,
 input[type="submit"] {
   min-width: 48px;
   min-height: 48px;
-}
+} */
