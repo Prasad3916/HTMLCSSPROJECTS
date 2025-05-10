@@ -1059,6 +1059,7 @@
 }
 
 /* Add this at the end of existing CSS */
+
 @media (max-width: 1200px) {
     .content {
         background-position: center;
@@ -1177,4 +1178,225 @@
     .categories .prod1 .content1 div h2 {
         color: #434f5d;
     }
+}
+
+
+
+
+/* Add these media queries at the end of your existing CSS */
+/* ========== General Responsive Rules ========== */
+@media (max-width: 1200px) {
+  .content,
+  .logos,
+  .items,
+  .products,
+  .categories,
+  .images,
+  .footer1,
+  .footer2 {
+    width: 95% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Header Section */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 5%;
+  }
+  
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  /* Hero Section */
+  .body {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 5%;
+  }
+  
+  .body .text,
+  .body .image {
+    width: 100% !important;
+    margin: 20px 0;
+  }
+
+  /* Products Grid */
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Categories Section */
+  .categories {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .categories .prod {
+    height: auto;
+  }
+
+  /* Applebasket Section */
+  .applebasket {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+  
+  .applebasket .image {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .applebasket .text .one,
+  .applebasket .text .two {
+    font-size: 2.5rem;
+  }
+
+  /* Products Grid */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer Section */
+  .footer2 {
+    flex-direction: column;
+  }
+  
+  .footer2 .subf21,
+  .footer2 .subf22,
+  .footer2 .subf23,
+  .footer2 .subf24 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* General Adjustments */
+  html {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .navbar .main {
+    font-size: 2rem;
+  }
+
+  /* Hero Section */
+  .body .text .foods {
+    font-size: 2.5rem;
+  }
+
+  /* Products Grid */
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  /* Categories Section */
+  .categories .prod .content1 div {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* Applebasket Section */
+  .applebasket .text .one,
+  .applebasket .text .two {
+    font-size: 2rem;
+  }
+
+  /* Images Grid */
+  .images {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer Section */
+  .footer1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .subf13 {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .search-container1 {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* ========== Specific Element Fixes ========== */
+/* Image Responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Form Elements */
+.search-input,
+.search-input1 {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card Elements */
+.logoitem,
+.productitem,
+.prod {
+  width: 100% !important;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+/* Flex Containers */
+.navbar,
+.body,
+.applebasket,
+.footer1,
+.footer3 {
+  flex-wrap: wrap;
+}
+
+/* Grid Items */
+.products > *,
+.categories > *,
+.images > * {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Text Scaling */
+h1, h2, h3, p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  
+  .mobile-menu-icon {
+    display: block !important;
+  }
+}
+
+/* Ensure Clickable Elements are Touch-Friendly */
+button,
+a,
+input[type="submit"] {
+  min-width: 48px;
+  min-height: 48px;
 }
