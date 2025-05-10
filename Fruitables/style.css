@@ -1058,150 +1058,123 @@
     color: #FFB524;
 }
 
-/* Responsive Styles */
+/* Add this at the end of existing CSS */
 @media (max-width: 1200px) {
-    .logos {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .logoitem {
-        width: 45%;
-        margin: 10px;
+    .content {
+        background-position: center;
+        border-radius: 60px;
     }
     
-    .categories {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .categories .prod .content1 div {
+        width: 80%;
     }
 }
 
 @media (max-width: 992px) {
-    .navbar ul {
-        display: none;
-    }
-    
     .body {
-        flex-direction: column;
-        padding: 50px 7%;
-        height: auto;
-    }
-    .body .text, .body .image {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    .products {
-        grid-template-columns: repeat(3, 1fr);
+        background-image: linear-gradient(rgba(255,255,255,0.8), url("https://themewagon.github.io/fruitables/img/hero-img.jpg"));
     }
     
     .applebasket {
-        flex-direction: column;
-        text-align: center;
+        background-color: #ffb524;
+        padding: 50px 7%;
     }
-    .applebasket .image {
-        margin-top: 30px;
+    
+    .categories .prod {
+        height: auto;
     }
 }
 
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
+    .header .content {
+        background-color: #81c408;
+        border-radius: 30px;
+        padding: 15px;
     }
     
-    .items {
-        flex-direction: column;
+    .products .productitem img:hover {
+        transform: scale(1.1);
+    }
+    
+    .applebasket .image img {
+        width: 100%;
         height: auto;
-    }
-    .items ul {
-        width: 100%;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-    
-    .products {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .images {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footer2 {
-        flex-direction: column;
-    }
-    .footer2 div {
-        width: 100%;
-        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 576px) {
-    .header .content ul {
-        flex-direction: column;
-        text-align: center;
+    .content {
+        background-color: #81c408;
+        border-radius: 30px !important;
     }
     
-    .logos .logoitem {
-        width: 100%;
+    .body .image {
+        background-color: transparent;
     }
     
-    .products {
-        grid-template-columns: 1fr;
+    .categories .prod .content1 div {
+        width: 90%;
+        padding: 10px;
     }
     
-    .images {
-        grid-template-columns: 1fr;
+    .testimonial .image .main {
+        background-color: #eff1f4;
     }
     
-    .testimonial .image {
-        grid-template-columns: 1fr;
-    }
-    
-    .search-container1 {
-        width: 100%;
-    }
-    
-    .footer1 {
-        flex-direction: column;
-        text-align: center;
-    }
-    .subf13 {
-        margin-top: 20px;
-    }
-    
-    .footer3 {
-        flex-direction: column;
-        text-align: center;
+    #faceicon {
+        background-color: white;
     }
 }
 
 @media (max-width: 480px) {
     .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-    .navbar ul {
-        margin-top: 20px;
-        justify-content: center;
+        background-color: rgba(255,255,255,0.95);
     }
     
-    .search-container {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    .products .productitem {
+        background-color: #ffffff;
+        border: 2px solid #ffb524;
     }
     
-    .items ul li button {
-        margin: 5px;
+    .applebasket {
+        background-color: #ffb524;
+        padding: 30px 10%;
     }
     
-    .applebasket .text .one,
-    .applebasket .text .two {
-        font-size: 40px;
+    .footer {
+        background-color: #45595b;
     }
     
-    .footer .subf21 button {
-        width: 100%;
+    .testimonial .image .main {
+        background-color: #eff1f4;
+    }
+}
+
+/* Ensure all background images maintain aspect ratio */
+[class*="prod"] .image img,
+.products .productitem img,
+.images .mainimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Fix background color overflow */
+.content,
+.categories .prod,
+.products .productitem {
+    overflow: hidden;
+}
+
+/* Maintain color contrast on mobile */
+@media (max-width: 768px) {
+    .products .productitem .content p {
+        color: #6e7e8f;
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .categories .prod1 .content1 div h2 {
+        color: #434f5d;
     }
 }
