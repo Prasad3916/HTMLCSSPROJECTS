@@ -467,6 +467,10 @@
     width: 100%;
     padding-bottom: 25px;
 }
+.products2{
+    /* padding-bottom: 10%; */
+    height: 30%;
+}
 .products2 .productitem::before{
     content: "Vegetable";
     position: absolute;
