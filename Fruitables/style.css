@@ -6,7 +6,7 @@
 }
 .header{
     width: 100%;
-      max-width: 100%;
+    max-width: 100%;
 }
 .link1{
     transition: all 100ms;
@@ -820,7 +820,7 @@
 #faceicon{
     width: 87%;
     background-color: whitesmoke;   
-    /* height: 400px; */
+    height: 400px;
     max-height: auto;
     margin: 5% auto;
     display: flex;
@@ -1087,12 +1087,18 @@
 }
 
 @media only screen and (min-width:767px) and (max-width: 1024px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.header{
+    width: 100%;
+    /* max-width: 100%; */
+    margin: 0 auto;
+    overflow-x: hidden;
+}
     .logos {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -1381,11 +1387,17 @@
     font-weight: bold;
 } 
 .testimonial{
-    margin: 10% auto;
+    margin: 5% auto;
     height: auto;
+    /* max-height: auto; */
     text-align: center;
+    padding: 40px 0;
+    /* background-color: #0d00ff; */
 }
 .testimonial .text{
+    margin-top: 5%;
+}
+.testimonial .image{
     margin-bottom: 5%;
 }
 .testimonial .text .one{
