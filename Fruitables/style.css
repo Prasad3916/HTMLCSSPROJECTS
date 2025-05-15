@@ -1086,7 +1086,7 @@
     color: #FFB524;
 }
 
-@media only screen and (min-width:487px) and (max-width: 1024px) {
+@media only screen and (min-width:461px) and (max-width: 1024px) {
 *{
     margin: 0;
     padding: 0;
@@ -1547,7 +1547,7 @@
     margin: 3% 0;
 }
 }
-@media only screen and (max-width: 486px) {
+@media only screen and (max-width: 460px) {
     *{
         box-sizing: border-box;
     }
