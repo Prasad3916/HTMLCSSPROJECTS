@@ -1117,7 +1117,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
-    /* background-color: aqua; */
 }
 .logoitem{
     margin: 0 auto;
@@ -1565,7 +1564,6 @@
 
     .navbar .navbutton{
         display: block;
-        /* background-color: aqua; */
         position: relative;
     }
     .navbar .navbutton svg{
@@ -1601,7 +1599,6 @@
 
     .navbar .navbutton{
         display: block;
-        /* background-color: aqua; */
         position: relative;
     }
     .navbar .navbutton svg{
