@@ -8,7 +8,15 @@
 .header{
     width: 100%;
     max-width: 100%;
+    
 }
+    .navbar .navbutton{
+        /* width: 30px;
+        height: 30px; */
+        display: none;
+    }
+
+
 .link1{
     transition: all 100ms;
 }
@@ -138,6 +146,9 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     min-width: 160px;
     z-index: 1;
+}
+.toggle{
+    display: none;
 }
 .dropdown-content a {
     color: black;
@@ -1185,9 +1196,7 @@
         display: none;
     }
     
-    .navbar ul {
-        display: none;
-    }
+
     
     .body {
         display: block;
@@ -1547,17 +1556,67 @@
 .footer .footer3 div{
     margin: 3% 0;
 }
+    .navbar .navlink{
+        display: none;
+    }
+    .navbar .navicon{
+        display: none;
+    }
+
+    .navbar .navbutton{
+        display: block;
+        background-color: aqua;
+        position: relative;
+    }
+    .navbar .navbutton svg{
+        width: 30px;
+        height: 30px;
+    }
+    .navbar .navbutton .navcheck{
+        display: none;
+        /* visibility: hidden; */
+    }
+    .navcheck:checked+.navlink{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media only screen and (max-width: 486px) {
     *{
         box-sizing: border-box;
     }
-        .content {
+
+
+
+    .content {
         display: none;
     }
-    .navbar ul {
+
+    .navbar .navlink{
         display: none;
     }
+    .navbar .navicon{
+        display: none;
+    }
+
+    .navbar .navbutton{
+        display: block;
+        background-color: aqua;
+        position: relative;
+    }
+    .navbar .navbutton svg{
+        width: 30px;
+        height: 30px;
+    }
+    .navbar .navbutton .navcheck{
+        display: none;
+        /* visibility: hidden; */
+    }
+    .navcheck:checked+.navlink{
+        display: flex;
+        flex-direction: column;
+    }
+
     .body {
         display: block;
         width: 100%;
