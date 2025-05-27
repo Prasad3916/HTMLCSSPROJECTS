@@ -1601,7 +1601,7 @@
 
     .navbar .navbutton{
         display: block;
-        background-color: aqua;
+        /* background-color: aqua; */
         position: relative;
     }
     .navbar .navbutton svg{
